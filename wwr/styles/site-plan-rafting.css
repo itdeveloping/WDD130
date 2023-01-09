@@ -11,8 +11,23 @@ Fonts are separated by a & */
   --accent1-color: #ee6e5d;
   --accent2-color: rgb(98, 245, 105);
 
+ /*Personal Palette*/
+  --primary-color: #119da4ff;
+  --secondary-color: #0c7489ff;
+  --accent1-color: #13505bff;
+  --accent2-color: #d7d9ceff;
+
+ 
+  --viridian-green: #119da4ff;
+  --teal-blue: #0c7489ff;
+  --midnight-green-eagle-green: #13505bff;
+  --rich-black-fogra-39: #040404ff;
+  --timberwolf: #d7d9ceff;
+
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon";
+  
+  /*personal font*/
   --heading-font: "Poppins";
   --paragraph-font: Poppins, Helvetica, sans-serif;
 
@@ -22,10 +37,12 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --nav-link-color: #ffffff;
+  --nav-background-color: #13505bff;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-hover-background-color: #032136;
+
+
 }
 
 
