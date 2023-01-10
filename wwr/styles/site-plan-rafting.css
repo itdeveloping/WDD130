@@ -13,11 +13,18 @@ Fonts are separated by a & */
   --accent1-color: #ee6e5d;
   --accent2-color: rgb(98, 245, 105);
 
+
+  --rich-black-fogra-29: #001524ff;
+  --ming: #15616dff;
+  --blanched-almond: #ffecd1ff;
+  --amber-sae-ece: #ff7d00ff;
+  --kobe: #78290fff;
+
  /*Personal Palette*/
-  --primary-color: #119da4ff;
-  --secondary-color: #0c7489ff;
-  --accent1-color: #13505bff;
-  --accent2-color: #d7d9ceff;
+  --primary-color: #ffecd1ff;
+  --secondary-color: #15616dff;
+  --accent1-color: #ff7d00ff;
+  --accent2-color: #78290fff;
 
  
   --viridian-green: #119da4ff;
@@ -30,16 +37,19 @@ Fonts are separated by a & */
   --heading-font: "IM Fell French Canon";
   
   /*personal font*/
-  --heading-font: Montserrat, sans-serif;
+  --heading-font: Sofia, sans-serif;
   --paragraph-font: Poppins, sans-serif;
-  --heading-second-font: Sofia, sans-serif;
+  --heading-second-font: Montserrat, sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
+
+  
+
   --headline-color-on-white: #66a9da;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --headline-color-on-color: #ffffff; /* headlines on a colored background */ 
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #396E94  ;
+  --paragraph-color-on-color: #ffecd1ff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #001524ff  ;
   --nav-link-color: #ffffff;
   --nav-background-color: #13505bff;
   --nav-hover-link-color: white;
@@ -64,12 +74,12 @@ img {
   max-width: 300px;
 }
 h1 {
-  font-family: var(--heading-second-font);
-  font-weight: 200;
+  font-family: var(--heading-font);
+  font-weight: 500;
 
 }
 h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
+  font-family: var(--heading-second-font);
   color: var(--headline-color-on-white);
   font-weight: 600;
 }
@@ -142,6 +152,8 @@ nav a {
 }
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
+  font-family: var(--paragraph-font);
+  font-weight: 300;
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
