@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+:root {
+    /* declare primary and secondary */
+    --primary-color: #FEFAE0;
+    --secondary-color: rgb(0, 0, 0);
+
+    /* declare font families and sizes*/
+
+    --heading-font: 'Open Sans', sans-serif;
+    --heading-font-size: 4em;
+    --paragraph-font: Poppins, Helvetica, sans-serif;
+    --paragraph-font-small: 1.2em;
+    --paragraph-font-medium: 1.5em;
+    --paragraph-font-large: 2em;
+    --paragraph-font-xlarge: 3em;
+
+    /* declare nav-lik and hover colors */
+
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: rgb(0, 0, 0);
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primary-color);
+    background-color: #073f41;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a,
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+    text-align: center;
+}
+
+#navigation_div {
+    background-color: #126c72;
+    padding: 10px;
+}
+
+nav {
+    padding: 20px;
+}
+
+nav a {
+    font-size: var(--paragraph-font-medium);
+    text-decoration: none;
+    padding: 7px 20px 7px 20px;
+}
+
+
+nav a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #073f41;
+}
+
+
+#background {
+    height: 725px;
+}
+
+
+body {}
+
+header {}
+
+nav a:hover {}
+
+.book,
+.join {}
+
+.book:hover,
+.join:hover {}
+
+.msg {}
+
+footer {
+    background-color: #283618;
+    color: var(--primary-color);
+    padding: 15px;
+}
+footer a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: var(--paragraph-font-small);
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline;
+}
+footer a:hover{
+    background-color: #283618;
+}
+
+footer a img {
+    margin: 10px 10px 10px 10px;
+}
+.icon {
+    width: 80px;
+}
+    
