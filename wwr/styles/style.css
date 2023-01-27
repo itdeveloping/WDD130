@@ -1,29 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
 
 :root {
-    /* declare primary and secondary */
-    --primary-color: #FEFAE0;
-    --secondary-color: rgb(0, 0, 0);
+    /* change the values below to your colors from your palette */
+    --primary-color: #ffecd1ff;
+    --secondary-color: #15616dff;
+    --accent1-color: rgb(221, 112, 9);
+    --accent2-color: #78290fff;
 
-    /* declare font families and sizes*/
+    --viridian-green: #119da4ff;
+    --teal-blue: #0c7489ff;
+    --midnight-green-eagle-green: #13505bff;
+    --rich-black-fogra-39: #040404ff;
+    --timberwolf: #d7d9ceff;
 
-    --heading-font: 'Open Sans', sans-serif;
-    --heading-font-size: 4em;
+    /* change the values below to your chosen font(s) */
+
+    --heading-font: Sofia, Helvetica, sans-serif;
     --paragraph-font: Poppins, Helvetica, sans-serif;
-    --paragraph-font-small: 1.2em;
-    --paragraph-font-medium: 1.5em;
-    --paragraph-font-large: 2em;
-    --paragraph-font-xlarge: 3em;
+    --header-font-size-small: 3em;
+    --header-font-size-large: 4em;
+    --paragraph-font-size-small: 1em;
+    --paragraph-font-size-medium: 1.5em;
+    --paragraph-font-size-large: 2em;
 
-    /* declare nav-lik and hover colors */
+    /* these colors below should be chosen from among your palette colors above */
 
+
+    --headline-color-on-white: #66a9da;
+    /* headlines on a white background */
+    --headline-color-on-color: #ffffff;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #396E94;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #ffecd1ff;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #001524ff;
     --nav-link-color: #ffffff;
-    --nav-hover-link-color: rgb(0, 0, 0);
+    --nav-background-color: #13505bff;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #032136;
+    --nav-font-size: 1.5em;
+
 }
-body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--primary-color);
-    background-color: #073f41;
+
+* {
+    border-style: dotted;
+    border-radius: 15px;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    color: var(--teal-blue);
+    background-color: var(--primary-color);
 }
 
 #content {
@@ -31,47 +59,62 @@ body{
     margin: 0 auto;
 }
 
-nav a,
-#hero-msg h1,
-#hero-msg h4,
-.button-box,
-main section {
-    text-align: center;
+#hero img {
+    width: 100%;
 }
 
 #navigation_div {
-    background-color: #126c72;
+    background-color: var(--secondary-color);
     padding: 10px;
+}
+
+.logo {
+    padding: 10px;
+    width: 70px;
+}
+
+#navigation_div img {
+    float: left;
+    display: block;
 }
 
 nav {
     padding: 20px;
+
 }
 
 nav a {
-    font-size: var(--paragraph-font-medium);
+    font-size: var(--nav-font-size);
     text-decoration: none;
     padding: 7px 20px 7px 20px;
+    display: inline;
+    margin-left: 150px;
 }
 
 
 nav a:hover {
     text-decoration: none;
-    color: #ffffff;
-    background-color: #073f41;
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 
-
-#background {
-    height: 725px;
+nav a:visited {
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
 }
+
+nav a:link {
+    text-decoration: none;
+    color: var(--nav-hover-link-color);
+}
+
 
 
 body {}
 
 header {}
 
-nav a:hover {}
+
 
 .book,
 .join {}
@@ -79,13 +122,47 @@ nav a:hover {}
 .book:hover,
 .join:hover {}
 
-.msg {}
+#background {
+    height: 725px;
+    background-color: var(--accent2-color);
+}
+.mountains {
+    display: block;
+    float: left;
+    height: 725px;
+    position: absolute;
+}
+
+.msg {
+    text-align: center;
+    background-color: var(--accent1-color);
+    width: 700px;
+    height: 400px;
+    display: block;
+    background-color: var(--secondary-color);
+    float: right;
+    margin-top: 50px;
+    position: absolute;
+top: 40px; left: 40px;
+}
+
+.msg h2 {
+
+    font-size: var(--header-font-size-small);
+    color: var(--primary-color)
+}
+
+.msg p {
+    font-size: var(--paragraph-font-size-medium);
+    color: var(--paragraph-color-on-color);
+}
 
 footer {
     background-color: #283618;
     color: var(--primary-color);
     padding: 15px;
 }
+
 footer a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: var(--paragraph-font-small);
@@ -93,14 +170,15 @@ footer a {
     color: var(--primary-color);
     display: inline;
 }
-footer a:hover{
+
+footer a:hover {
     background-color: #283618;
 }
 
 footer a img {
     margin: 10px 10px 10px 10px;
 }
+
 .icon {
     width: 80px;
 }
-    
