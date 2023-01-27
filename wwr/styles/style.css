@@ -45,7 +45,7 @@
 }
 
 * {
-   /* border-style: dotted;
+    /* border-style: dotted;
     border-width: thin;*/
     border-radius: 10px;
 }
@@ -78,6 +78,7 @@ header {
     margin-bottom: 20px;
 
 }
+
 #navigation_div img {
     float: left;
     display: block;
@@ -111,11 +112,12 @@ nav a:link {
     text-decoration: none;
     color: var(--nav-hover-link-color);
 }
+
 #hero {
     text-align: center;
 }
-main
-{
+
+main {
     text-align: center;
 }
 
@@ -126,6 +128,7 @@ main
     background-color: var(--accent2-color);
     position: relative;
 }
+
 .mountains {
     position: absolute;
     display: block;
@@ -144,7 +147,7 @@ main
     background-color: var(--secondary-color);
     float: right;
     position: relative;
-    top: 180px; 
+    top: 180px;
     right: 60px;
 }
 
@@ -158,24 +161,27 @@ main
     font-size: var(--paragraph-font-size-medium);
     color: var(--paragraph-color-on-color);
 }
-.msg a:link{
+
+.msg a:link {
     color: var(--nav-link-color);
     font-size: var(--paragraph-font-size-medium);
     padding: 5px;
     text-decoration: none;
 }
-.msg a:hover{
+
+.msg a:hover {
     background-color: var(--nav-link-color);
     font-size: var(--paragraph-font-size-medium);
     color: var(--secondary-color);
 }
-.social{
+
+.social {
 
     float: right;
 }
 
 footer {
-    background-color:var( --midnight-green-eagle-green);
+    background-color: var(--midnight-green-eagle-green);
     color: var(--primary-color);
     padding: 15px;
     margin-top: 20px;
@@ -184,14 +190,13 @@ footer {
     height: 80px;
 }
 
-footer p
-{
+footer p {
     display: inline;
     margin: 40px 20px 0px 20px;
 }
 
 footer a {
-    font-family:var(--paragraph-font);
+    font-family: var(--paragraph-font);
     font-size: var(--paragraph-font-xsmall);
     text-decoration: none;
     color: var(--primary-color);
@@ -206,13 +211,13 @@ footer a:hover {
 }
 
 
-footer .social a  {
+footer .social a {
     background-color: inherit;
     display: inline;
 }
 
 
-footer .social a:hover  {
+footer .social a:hover {
     background-color: inherit;
 }
 
