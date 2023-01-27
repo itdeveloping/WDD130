@@ -47,7 +47,7 @@
 * {
     /* border-style: dotted;
     border-width: thin;*/
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 body {
@@ -67,15 +67,15 @@ body {
 
 #navigation_div {
     background-color: var(--secondary-color);
-    padding: 15px;
+    padding: 8px;
 }
 
 .logo {
-    width: 70px;
+    width: 80px;
 }
 
 header {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 
 }
 
@@ -85,15 +85,16 @@ header {
 }
 
 nav {
-    padding: 20px;
+    padding: 24px;
+    height: 32px;
 }
 
 nav a {
     font-size: var(--nav-font-size);
     text-decoration: none;
-    padding: 7px 20px 7px 20px;
+    padding: 8px 24px 8px 24px;
     display: inline;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 
@@ -115,13 +116,25 @@ nav a:link {
 
 #hero {
     text-align: center;
+    position: relative;
 }
-
+#hero_msg{
+    display: block;
+    position: absolute;
+    top: 10px;
+}
 main {
     text-align: center;
 }
 
-
+a.book
+{
+    text-decoration: none;
+    font-family: var(--paragraph-font-size-xlarge);
+    color: var(--accent1-color);
+    border: var(--secondary-color) solid 1px;
+    padding: 10px;
+}
 
 #background {
     height: 725px;
@@ -179,7 +192,12 @@ main {
 
     float: right;
 }
-
+.button_box a{
+    border-style: solid ;
+    border-width: 1px;
+    border-color: var(--accent1-color);
+    text-decoration: none;
+}
 footer {
     background-color: var(--midnight-green-eagle-green);
     color: var(--primary-color);
@@ -227,5 +245,5 @@ footer a img {
 }
 
 .icon {
-    width: 50px;
+    width: 80px;
 }
