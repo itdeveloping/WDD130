@@ -17,12 +17,18 @@
 
     --heading-font: Sofia, Helvetica, sans-serif;
     --paragraph-font: Poppins, Helvetica, sans-serif;
+    --home-title-font-family: Sofia, Helvetica, sans-serif;
+
     --header-font-size-small: 3em;
     --header-font-size-large: 4em;
     --paragraph-font-size-xsmall: 0.5em;
     --paragraph-font-size-small: 1em;
     --paragraph-font-size-medium: 1.5em;
     --paragraph-font-size-large: 2em;
+    --book-font-size: 18px;
+    --join-font-size: 18px;
+    --home-title-font-size: 2em;
+    --msg-p-font-size: .8em;
 
     --headline-color-on-white: #66a9da;
     /* headlines on a white background */
@@ -41,16 +47,18 @@
 
 }
 
-* {
-    /* border-style: dotted;
-    border-width: thin;*/
-    border-radius: 8px;
-}
 
 body {
     font-family: var(--paragraph-font);
     color: var(--teal-blue);
     background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+
 }
 
 #content {
@@ -60,6 +68,12 @@ body {
 
 #hero img {
     width: 100%;
+}
+
+.home-title {
+    font-family: var(--home-title-font-family);
+    font-size: var(--home-title-font-size);
+    margin-top:10px;
 }
 
 #navigation_div {
@@ -89,7 +103,7 @@ nav {
 nav a {
     font-size: var(--nav-font-size);
     text-decoration: none;
-    padding: 8px 24px 8px 24px;
+    padding: 35px;
     display: inline;
     margin-left: 8px;
 }
@@ -110,7 +124,9 @@ nav a:link {
     text-decoration: none;
     color: var(--nav-hover-link-color);
 }
-
+#logo_link {
+    padding-top: 5px;
+}
 #hero {
     text-align: center;
     position: relative;
@@ -125,13 +141,24 @@ nav a:link {
 main {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 
-a.book {
+a {
     text-decoration: none;
-    font-family: var(--paragraph-font-size-xlarge);
-    color: var(--accent1-color);
+}
+
+.book, .join{
+    background-color: var(--primary-color);
     border: var(--secondary-color) solid 1px;
-    padding: 10px;
+    border-radius: 5px;
+    color: var(--accent1-color);
+    font-family: var(--paragraph-font-size-xlarge);
+    font-size: var(--book-font-size);
+    margin-top: 50px;
+    padding: 15px 30px;
+    
 }
 
 #background {
@@ -150,16 +177,20 @@ a.book {
 }
 
 .msg {
-    text-align: center;
     background-color: var(--accent1-color);
-    width: 700px;
-    height: 400px;
-    display: block;
     background-color: var(--secondary-color);
+    box-sizing: border-box;
+    display: block;
     float: right;
+    height: 400px;
+    line-height: 1.5em;
+    padding: 35px;    
     position: relative;
-    top: 180px;
     right: 60px;
+    text-align: center;
+    top: 180px;
+    width: 700px;
+
 }
 
 .msg h2 {
@@ -169,26 +200,30 @@ a.book {
 }
 
 .msg p {
-    font-size: var(--paragraph-font-size-medium);
+    font-size: var(--msg-p-font-size);
     color: var(--paragraph-color-on-color);
+    padding-bottom: 15px;
 }
 
-.msg a:link {
-    color: var(--nav-link-color);
-    font-size: var(--paragraph-font-size-medium);
-    padding: 5px;
-    text-decoration: none;
-}
-
-.msg a:hover {
-    background-color: var(--nav-link-color);
-    font-size: var(--paragraph-font-size-medium);
-    color: var(--secondary-color);
-}
 
 .social {
 
     float: right;
+}
+
+.card-img {
+    border: 10px solid var(--secondary-color);
+}
+
+.rivers_card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+}
+.rapids-card{
+    margin:200px 0;
 }
 
 .button_box a {
@@ -201,9 +236,8 @@ a.book {
 footer {
     background-color: var(--midnight-green-eagle-green);
     color: var(--primary-color);
-    padding: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding: 25px 50px;
+    margin-top: 200px;
     display: block;
     height: 80px;
 }
@@ -239,11 +273,12 @@ footer .social a:hover {
     background-color: inherit;
 }
 
-footer a img {
+footer .social img {
     float: left;
-    margin: 10px;
+    padding-top: 15px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
