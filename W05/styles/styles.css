@@ -1,0 +1,22 @@
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+footer {
+    width: 1280px;
+    background-color: rgb(110, 109, 109);
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.circle {
+    width: 250px;
+    margin: 0px 40px 0px 40px;
+    border-radius: 100%;
+    border: 20px solid rgb(65, 63, 63);
+}
