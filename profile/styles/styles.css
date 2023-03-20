@@ -172,6 +172,64 @@ main{
 #DigDesContainter a:hover{
     color:var(--accent1-color)
 }
+.intro{
+    display: grid;
+    grid-template-columns: 100px 1fr 200px 1fr 100px;
+}
+.intro #img1{
+    grid-column: 2/3;
+}
+.intro p{
+    grid-column: 3/4;
+    box-sizing: border-box;
+    padding: 10px;
+    line-height: 25px; 
+}
+.intro #img2{
+    grid-column: 4/5;
+}
+/*Styles for Hero div in webdev.html*/
+.Hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--secondary-color);
+}
+.Hero .HeroText{
+    grid-column: 1/2;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+}
+.Hero .HeroText h1{
+    color: var(--white-color);
+
+}
+.Hero .HeroText p{
+    color:var(--white-color);
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+}
+.Hero .HeroImage{
+    grid-column: 2/3;
+}
+
+section.Info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
+}
+
+section.Info .InfoImage{
+    grid-column: 1/2;
+
+}
+section.Info .InfoText{
+    grid-column: 2/3;
+    margin: auto 0;
+    padding: 15px;
+    line-height: 25px;
+}
+
+
 footer {
     background-color:var(--primary-color);
     color: var(--primary-color);
