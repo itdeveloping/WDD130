@@ -60,8 +60,11 @@ header {
     width: 1094px;
     margin: 0 auto;
 }
-nav h1{
+nav p{
     color:var(--white-color);
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: var(--heading-font-size);
 }
 
 nav a {
