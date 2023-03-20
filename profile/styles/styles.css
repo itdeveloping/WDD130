@@ -182,12 +182,15 @@ main{
 .intro #img1{
     grid-column: 2/3;
 }
-.intro p{
+.intro h1{
     grid-column: 3/4;
     box-sizing: border-box;
     padding: 10px;
-    line-height: 25px; 
+    line-height: 170%; 
     text-align: center;
+    font-size: 1.3em;
+    font-family: var(--paragraph-font);
+    font-weight: 100;
 }
 .intro #img2{
     grid-column: 4/5;
