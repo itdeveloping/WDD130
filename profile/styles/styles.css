@@ -206,4 +206,8 @@ footer a:hover{
     color: var(--white-color);
 }  
 
+footer a:visited{
+    color: var(--white-color);
+}  
+
 
