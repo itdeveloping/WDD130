@@ -41,7 +41,7 @@ p {
     color: var(--primary-color);
 }
 #content {
-    max-width: 1360px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -121,7 +121,7 @@ nav a:link {
 }
 main{
     display: grid;
-    grid-template-columns: 1fr 200px 1fr;    
+    grid-template-columns: 1fr 120px 1fr;    
     margin: 0 auto;
     margin-top: 10px;
 }
@@ -195,7 +195,7 @@ main{
 }
 .intro{
     display: grid;
-    grid-template-columns: 100px 1fr 200px 1fr 100px;
+    grid-template-columns: 10px 1fr 380px 1fr 10px;
 }
 .intro #img1{
     grid-column: 2/3;
@@ -252,6 +252,7 @@ section.Info .InfoText{
     margin: auto 0;
     padding: 15px;
     line-height: 25px;
+    text-align: justify;
 }
 
 
@@ -304,7 +305,7 @@ footer a:visited{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1360px;
+  max-width: 1300px;
   position: relative;
   margin: auto;
 }
