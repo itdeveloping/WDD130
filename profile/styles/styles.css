@@ -7,14 +7,14 @@
     --accent1-color: #00A6FB;
     --accent2-color: #051923;
 
-    --white-color:#FFF;
+    --white-color: #FFF;
 
     /* create font family and font size */
     --heading-font: Lato, Helvetica, sans-serif;
     --heading-font-size: 2em;
     --paragraph-font: Roboto, Helvetica, sans-serif;
     --paragraph-font-size: 1em;
-    
+
 
 }
 
@@ -27,6 +27,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 h1 {
     font-family: var(--heading-font);
     font-weight: 900;
@@ -34,12 +35,14 @@ h1 {
     font-size: var(--heading-font-size);
 
 }
+
 p {
     font-family: var(--paragraph-font);
     font-weight: 300;
     font-size: var(--paragraph-font-size);
     color: var(--primary-color);
 }
+
 #content {
     max-width: 1300px;
     margin: 0 auto;
@@ -52,16 +55,18 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
- nav{
+
+nav {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
     text-align: center;
-    background-color: var(--secondary-color);    
+    background-color: var(--secondary-color);
     width: 1094px;
     margin: 0 auto;
 }
-nav p{
-    color:var(--white-color);
+
+nav p {
+    color: var(--white-color);
     font-family: var(--heading-font);
     font-weight: 400;
     font-size: var(--heading-font-size);
@@ -92,17 +97,26 @@ nav a:link {
     text-decoration: none;
     color: var(--white-color);
 }
+
 .logo {
     width: 100px;
     margin: 5px;
 }
-.nav h1{
+
+.nav h1 {
     grid-column: 1/1;
     grid-row: 1/1;
 }
-.About{
+
+.About {
     display: grid;
     grid-template-columns: 250px 1fr 250px;
+}
+
+#content h1 {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 300;
 }
 
 .About p {
@@ -114,85 +128,97 @@ nav a:link {
     text-align: justify;
     margin-bottom: 55px;
 }
-main{
+
+main {
     display: grid;
-    grid-template-columns: 1fr 120px 1fr;    
+    grid-template-columns: 1fr 120px 1fr;
     margin: 0 auto;
     margin-top: 10px;
 }
-#WebDevContainter{
+
+#WebDevContainter {
     grid-column: 1/1;
     grid-row: 1/1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
-    grid-template-rows: 100px 200px 60px 50px;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 60px 50px;
     height: 410px;
 }
-#WebDevContainter img{
+
+#WebDevContainter img {
     grid-column: 1/1;
     grid-row: 1/1;
 }
-#WebDevContainter h1{
+
+#WebDevContainter h1 {
     grid-column: 1/3;
-    grid-row: 3/4;    
+    grid-row: 3/4;
     box-sizing: border-box;
     color: var(--white-color);
-    text-align: center;    
+    text-align: center;
     padding: 10px;
     margin: 0 auto;
 }
 
-#WebDevContainter a{
+#WebDevContainter a {
     margin: 0 auto;
     grid-column: 1/2;
-    grid-row: 4/5;    
-    box-sizing: border-box;    
+    grid-row: 4/5;
+    box-sizing: border-box;
     color: var(--accent1-color);
     font-family: var(--paragraph-font);
     text-decoration: none;
 }
-#WebDevContainter a:hover{
-    color:var(--secondary-color)
+
+#WebDevContainter a:hover {
+    color: var(--secondary-color)
 }
-#DigDesContainter{
+
+#DigDesContainter {
     grid-column: 3/4;
     grid-row: 1/1;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;   
-    grid-template-rows: 100px 200px 60px 50px;  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 60px 50px;
     height: 410px;
-    
+
 }
-#DigDesContainter img{
+
+#DigDesContainter img {
     grid-column: 1/1;
     grid-row: 1/1;
 }
-#DigDesContainter h1{
+
+#DigDesContainter h1 {
     grid-column: 1/3;
-    grid-row: 3/4;    
+    grid-row: 3/4;
     box-sizing: border-box;
     color: var(--secondary-color);
-    text-align: center;    
+    text-align: center;
     padding: 10px;
     margin: 0 auto;
 }
-#DigDesContainter a{
+
+#DigDesContainter a {
     margin: 0 auto;
     grid-column: 1/2;
-    grid-row: 4/5;    
-    box-sizing: border-box;    
+    grid-row: 4/5;
+    box-sizing: border-box;
     color: var(--white-color);
     font-family: var(--paragraph-font);
     text-decoration: none;
 }
-#DigDesContainter a:hover{
-    color:var(--accent1-color)
+
+#DigDesContainter a:hover {
+    color: var(--accent1-color)
 }
-.intro{
+
+.intro {
     display: grid;
     grid-template-columns: 425px 450px 425px;
 }
-.intro p{
+
+.intro p {
     grid-column: 1/2;
     line-height: 150%;
     font-family: var(--heading-font);
@@ -201,14 +227,16 @@ main{
     padding: 15px;
     text-align: justify;
 }
-.intro #img1{
+
+.intro #img1 {
     grid-column: 2/3;
 }
-.intro h1{
+
+.intro h1 {
     grid-column: 3/4;
     box-sizing: border-box;
     padding: 10px;
-    line-height: 170%; 
+    line-height: 170%;
     text-align: center;
     font-size: 1.3em;
     font-family: var(--heading-font);
@@ -216,45 +244,50 @@ main{
 }
 
 
-.intro #img2{
+.intro #img2 {
     grid-column: 3/4;
 }
 
 /*Styles for Hero div in webdev.html*/
-.Hero{
+.Hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: var(--secondary-color);
 }
-.Hero .HeroText{
+
+.Hero .HeroText {
     grid-column: 1/2;
     text-align: center;
     box-sizing: border-box;
     padding: 25px;
 }
-.Hero .HeroText h1{
+
+.Hero .HeroText h1 {
     color: var(--white-color);
 
 }
-.Hero .HeroText p{
-    color:var(--white-color);
+
+.Hero .HeroText p {
+    color: var(--white-color);
     font-family: var(--heading-font);
     font-size: 1.1em;
 }
-.Hero .HeroImage{
+
+.Hero .HeroImage {
     grid-column: 2/3;
 }
 
 section.Info {
     display: grid;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;
 }
 
-section.Info .InfoImage{
+section.Info .InfoImage {
     grid-column: 1/2;
 
 }
-section.Info .InfoText{
+
+section.Info .InfoText {
     grid-column: 2/3;
     margin: auto 0;
     padding: 15px;
@@ -264,134 +297,149 @@ section.Info .InfoText{
 
 
 footer {
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
     color: var(--primary-color);
     margin-top: 50px;
     margin-bottom: 25px;
     box-sizing: border-box;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
 }
 
-footer .SocialNetwork img{
+footer .SocialNetwork img {
     margin-left: 10px;
 }
-footer .SocialNetwork a:link{
+
+footer .SocialNetwork a:link {
     padding: 0px;
 }
-footer .SocialNetwork a:hover{
+
+footer .SocialNetwork a:hover {
     padding: 0px;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
 }
+
 footer p {
     color: var(--white-color);
     box-sizing: border-box;
     margin-left: 100px;
-    
+
 }
-footer a:link{
+
+footer a:link {
     color: var(--white-color);
     font-family: var(--paragraph-font);
     text-decoration: none;
     margin-left: 10px;
     padding: 10px;
-}    
-footer a:hover{
-    background-color:var(--accent2-color);
+}
+
+footer a:hover {
+    background-color: var(--accent2-color);
     color: var(--white-color);
-}  
+}
 
-footer a:visited{
+footer a:visited {
     color: var(--white-color);
-}  
+}
 
 
-* {box-sizing:border-box}
+* {
+    box-sizing: border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1300px;
-  position: relative;
-  margin: auto;
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
