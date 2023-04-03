@@ -267,11 +267,17 @@ footer a:link {
 
 }    
 
-footer .email a:link{
+footer .links a:link{
+    color: var(--white-color);
     margin-left: 100px;
     padding: 10px;
 }
-footer .email a:hover{
+footer .links a:visited{
+    color: var(--white-color);
+    margin-left: 100px;
+    padding: 10px;
+}
+footer .links a:hover{
     background-color: var(--accent2-color);
     padding: 10px;
     box-sizing: border-box;
