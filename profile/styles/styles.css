@@ -252,30 +252,30 @@ footer {
 footer .SocialNetwork img{
     margin-left: 10px;
 }
+
+
 footer p {
     color: var(--white-color);
     box-sizing: border-box;
     margin-left: 800px;
     
 }
-footer a:link{
-    
+footer a:link {
     color: var(--white-color);
     font-family: var(--paragraph-font);
     text-decoration: none;
-    margin-left: 260px;
-    padding: 10px;
+
 }    
-footer a:hover{
-    background-color:var(--accent2-color);
-    color: var(--white-color);
-}  
 
-footer a:visited{
-    color: var(--white-color);
-}  
-
-
+footer .email a:link{
+    margin-left: 100px;
+    padding: 10px;
+}
+footer .email a:hover{
+    background-color: var(--accent2-color);
+    padding: 10px;
+    box-sizing: border-box;
+}
 * {box-sizing:border-box}
 
 /* Slideshow container */
